@@ -16,7 +16,6 @@
 
 
     window.onload = function () {
-        $("mainpage").classList.add("hidden");
         $("start").onclick = showResume;
     }
     
