@@ -240,14 +240,10 @@ hr {
 
 #education img {
     background-color: whitesmoke;
+    width: 500px;
+    height: 300px;
 }
 
-.snowball {
-    background-color: white;
-    border: 1px solid white;
-    border-radius: 50%;
-    position: absolute;
-}
 
 #experience-header {
     position: absolute;
