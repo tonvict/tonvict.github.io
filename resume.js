@@ -17,11 +17,25 @@
 
     window.onload = function () {
         $("start").onclick = showResume;
+        $("pixelface").onmouseover = wink;
+        $("pixelface").onmouseout = winkOff;
+        
     }
     
     function showResume(){
+        let audioElement = document.createElement('audio');
+        audioElement.setAttribute('src', "zelda.mp3");
+        audioElement.play();
         $("menu").classList.add("hidden");
         $("mainpage").classList.remove("hidden");
+    }
+    
+    function wink(){
+        this.setAttribute('src', 'eytan_wink.png')
+    }
+    
+    function winkOff(){
+        this.setAttribute('src', 'Eytan face.png')
     }
 
 
