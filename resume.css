@@ -47,8 +47,8 @@ body {
 #landscape {
     background-color: #3D9970;
     width: 100%;
-    height: 400px;
-    filter: grayscale();
+    height: 600px;
+    
     
     
 }
