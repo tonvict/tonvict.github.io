@@ -275,6 +275,13 @@ hr {
     height: 220px;
 }
 
+#eytanfull{
+    width: 500px;
+    position: absolute;
+    left: 10%;
+    top: 260%
+}
+
 
 
 
