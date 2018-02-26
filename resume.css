@@ -76,9 +76,6 @@ body {
 #name {
     font-size: 40px;
     font-weight: lighter;
-    position: absolute;
-    top: 8px;
-    left: 16px;
 }
 
 span span span{
@@ -88,14 +85,11 @@ span span span{
 }
 
 #about-me{
-    position: absolute;
     background-color: whitesmoke;
     width: 500px;
     height: 264px;
     border: 1px solid grey;
     padding: 25px;
-    left: 49%;
-    top: 56%;
     border-radius: 10px;
 }
 
@@ -105,14 +99,18 @@ span span span{
 }
 
 #profile{
+    display: flex;
+    justify-content: center;
     position: absolute;
-    left: 10%; 
+    left: 10%;
     top: 56%;
+    
     
 
 }
 
 #eytan{
+    height: 315px;
     width: 500px;
     border-radius: 10px;
     
