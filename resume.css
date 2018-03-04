@@ -1,3 +1,9 @@
+html {
+    min-width: 550px;
+    
+}
+
+
 @font-face {
     font-family: "Silkscreen";
     src: url(fonts/slkscr.ttf);
@@ -6,29 +12,32 @@
 body {
     font-family: Silkscreen;
     background-color: black;
+    min-width: 550px;
     
 }
 
-#menu p {
+#start {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    line-height: 500px;
     color: #3D9970;
     font-size: 46px;
-    position: absolute;
-    top: 55%;
-    left: 50%;
     transform: translate(-50%, -50%);
     text-shadow: 2px 2px red;
     transition: font-size .5s;
 }
 
-#menu p:hover {
-    font-size: 70px;
+#start:hover {
+    font-size: 70px
 }
 
 #pixelface{
-    text-align: center;
     position: absolute;
-    left: 38%;
-    top: 10%;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    text-align: center;
     width: 300px;
 }
 
@@ -53,12 +62,7 @@ body {
     
 }
 
-#image-container1 {
-    position: relative;
-    text-align: center;
 
-    
-}
 
 .centered {
     position: absolute;
@@ -68,7 +72,7 @@ body {
     color: black;
     font-weight: lighter;
     font-size: 60px;
-    letter-spacing: 4px;
+    letter-spacing: 50px;
     font-family: Silkscreen;
 
 }
@@ -121,23 +125,29 @@ hr {
     margin-top: 30px;
 }
 
+test {
+    display: inline-block;
+    
+   
+    
+}
+
 #summary-header {
-    position: absolute;
-    left: 5%;
-    top: 110%;
     color: #3D9970;
+    position: relative;
+    left: 5%;
     
 }
 
 #summary {
-    position: absolute;
+    position: relative;
     background-color: whitesmoke;
     width: 500px;
     height: 900px;
     border: 1px solid grey;
     padding: 15px;
-    left: 6%;
-    top: 120%;
+    float: left;
+    left: 5%;
     border-radius: 10px;
     
 }
@@ -188,31 +198,33 @@ hr {
 }
 
 #summary img {
-    position:absolute;
+    position:relative;
     left:20%;
     width: 300px;
     height: 300px;
 }
 
+
 #education-header {
-    position: absolute;
-    
-    top: 110%;
     color: #3D9970;
-    left: 50%;
     
 }
 
+#education-whole {
+    position: relative;
+    left: 10%;
+}
+
 #education {
-    position: absolute;
+    
     background-color: whitesmoke;
     width: 500px;
     height: 600px;
     border: 1px solid grey;
     padding: 15px;
-    left: 50%;
-    top: 120%;
     border-radius: 10px;
+
+    overflow: hidden;
 }
 
 #education img {
@@ -221,49 +233,54 @@ hr {
     height: 300px;
 }
 
+#test2 {
+    position: relative;
+    left: 50%;
+}
+
 
 #experience-header {
-    position: absolute;
-    left: 40%;
-    top: 220%;
     color: #3D9970;
-    left: 50%;
+    position: relative;
+    right:42%;
+
     
 }
 
 #experience {
-    position: absolute;
+    position: relative;
+    left: 10%;
     background-color: whitesmoke;
     width: 500px;
-    height: 950px;
+    height: 100%;
     border: 1px solid grey;
     padding: 15px;
-    left: 50%;
-    top: 230%;
     border-radius: 10px;
+    
 }
 
 #sword{
-    position: absolute;
-    top: 80%;
+    position: relative;
+    top: 10%;
     color: #3D9970;
     left: 45%;
     width: 300px;
-    height: 220px;
+    height: 150px;
 }
+
+#test3{
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    right: 75%
+}
+
 
 #eytanfull{
     width: 500px;
     position: absolute;
-    left: 10%;
-    top: 260%
+    right: 55%;
+    top: 30%;
+    
 }
-
-
-
-
-
-
-
-
 
