@@ -164,11 +164,18 @@ li a:hover {
 }
 #tonvict {
     width: 100%;
-    min-height: 100%;
+    
 }
+
+
 
 #comic {
     width: 50%;
+        display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
 }
 
 .text3 {
