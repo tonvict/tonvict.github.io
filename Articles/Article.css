@@ -6,7 +6,7 @@
 
 
 body {
-    background-color: aliceblue;
+    background-color: #ff8967;
     font-family: Verdana;
     
 }
@@ -70,19 +70,17 @@ li a:hover {
 #article{
     position: relative;
     left: 100px;
-    font-family: Georgia;
-    font-size: 16pt;
+    font-family: Helvetica;
 }
 
 img {
-    position: relative;
-    left: 200px;
+    left: center;
     width: 300px;
     height: 300px;
 }
 
 #article-text {
     width: 700px;
-    text-align: center;
-    overflow
+    text-align: left;
+    
 }
