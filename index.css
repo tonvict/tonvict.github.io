@@ -209,7 +209,7 @@ li a:hover {
 
 
 #comic {
-    width: 50%;
+    width: 15%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -278,12 +278,12 @@ input[type=submit] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #ff8910;
 }
 
 /* Add a background color and some padding around the form */
 .container {
     border-radius: 5px;
-    background-color: aliceblue;
+    background-color: #ff8990;
     padding: 20px;
 }
