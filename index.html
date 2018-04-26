@@ -1,104 +1,111 @@
-<!-- Eytan Raphaely
-Creative Project 1
-October 1st 2018-->
-
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Eytan's Website</title>
+    <title>Eytan Raphaely</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
     <link type="text/css" href="index.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="index.js" type="text/javascript"></script>
-    <script src="https://courses.cs.washington.edu/courses/cse154/17au/lecture/AjaxCheckStatusHelper.js" type="text/javascript"></script>
-
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
     <div id="mainpage">
         <header>
-            <h1 id="welcome">eytan raphaely</h1>
-            <a href="contact.html" id="contact-me-button">Contact Me</a>
-            <a href="Resum%C3%A9.html" class="buttons">Resum&egrave;</a>
+            <div class="col">
+                <h1>eytan raphaely</h1>
+                <a href="Resum%C3%A9.html" class="buttons">Resum&egrave;</a>
+            </div>
         </header>
-        <div id="container">
-            <div image-container>
-                <img id="microphone" alt="microphone" src="https://tonvict.github.io/images/microphone2.png">
-                <span class="middle" id="text1">comedy</span>
-
-                <img id="laptop" alt="laptop" src="https://tonvict.github.io/images/laptop3.png">
-
-                <span class="middle" id="text2">code</span>
+        <div id=microphone>
+            <img class="img-fluid" class="img-circle" alt="microphone" src="https://tonvict.github.io/images/microphone2.png">
+            <div class="caption">
+                <p id="comedy">comedy</p>
             </div>
         </div>
     </div>
-    <div id="jokepage" class="hidden">
-        <header>
-            <ul>
-                <div>
-                    <li><a id="home" class="home" href="#home">Home</a></li>
-                </div>
-                <div>
-                    <li><a href="#articles">Articles</a></li>
-                </div>
-                <div>
-                    <li><a href="contact.html">Contact</a></li>
-                </div>
-                <div>
-                    <li><a href="#about">About</a></li>
-                </div>
-                <span class="text3"><li><a  href="#title">eytan raphaely, comedian</a></li></span>
-            </ul>
-        </header>
+    <div id="jokepage" class="hidden" data-spy="scroll" data-target=".navbar" data-offset="10">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+            <!-- Brand -->
+            <a class="navbar-brand" href="#home" id="home">eytan raphaely, comedian</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Scripts">Scripts</a>
+                    </li>
 
-        <div id="parallax"></div>
-        <!--        <img id="tonvict" alt="Eytan" class="w3-image" src="https://tonvict.github.io/images/volcano.jpg">-->
-        <div id="about">
-            <h3 class="boom">ABOUT ME</h3>
-            <p>About me? What could YOU want to know about me? I'm nothing, a shadow of a man, a small hiccup in history of mankind, a speck of insignificant dust floating aimlessly through space. The fact that you even have the audacity to think that anyone wants to know about anybody puts you at the lowest tier in society. I am embarrassed for you. Go drink absinthe and have sex with a woman you just met. Go surf on the beaches of Gutlampal while snorting cocaine off another man’s member. Do something that will make you feel like life is worth giving a damn about.
-
-            </p>
-            <div class="bing">
-                <br>
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#ArticleOptions" id="navbardrop" data-toggle="dropdown">
+        Articles
+      </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#articles">Articles</a>
+                            <a class="dropdown-item" href="#charity">Charity of The Week</a>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <!--        <div id="parallax1"></div>-->
+        </nav>
+        <div id=parallax></div>
+        <div class="container" id="about">
+            <h3 class="boom">ABOUT</h3>
+
+            <p id="about-p">
+                I am a 22 year old guy just trying to make people laugh. I go to the University of Washington in Seattle where I study some programming stuff and some film stuff. I do stand-up comedy and like writing articles that I think are funny. I work for a marketing company right now, writing scripts for various projects.
+            </p>
+
+            <br>
+
+
             <img id="comic" alt="boom" class="w3-image" src="https://tonvict.github.io/images/comic.png">
         </div>
         <div id="articles">
             <h3 class="boom">Articles</h3>
-            <a href="/Articles/Article.html">Stunned Jury Forced to Find Air Bud Not Guilty</a>
-            <a href="/Articles/Article2.html">Ice Age Film Exec's: "Impending Catclysmic Climate Change Allows For Exciting Fifth Film In Franchise"</a>
-            <a href="/Articles/Article3.html">Token White Friend on Black Panther: It's Great to Finally be Represented in A Major Motion Picture</a>
-            <a href="/Articles/Article6.html">First Baptism Origins</a>
-            <a href="/Articles/Article14.html">Someone Found Out The Real Original Owner Of The "MJ" Shoes From Like Mike</a>
-            <a href="/Articles/Article20.html">Magic Johnson Has A Bold New Way To Attract Big Name Free Agents</a>
+            <a href="/Articles/Article.html">Stunned Jury Forced to Find Air Bud Not Guilty</a><br>
+            <a href="/Articles/Article2.html">Ice Age Film Exec's: "Impending Catclysmic Climate Change Allows For Exciting Fifth Film In Franchise"</a><br>
+            <a href="/Articles/Article3.html">Token White Friend on Black Panther: It's Great to Finally be Represented in A Major Motion Picture</a><br>
+            <a href="/Articles/Article6.html">First Baptism Origins</a><br>
+            <a href="/Articles/Article14.html">Someone Found Out The Real Original Owner Of The "MJ" Shoes From Like Mike</a><br>
+            <a href="/Articles/Article20.html">Magic Johnson Has A Bold New Way To Attract Big Name Free Agents</a><br>
             <a href="/Articles/Article18.html">Contestans Confused To Find Out The Goal of the Reality Shows Is To Make As Many Friends
-            As Possible</a>
-            <a href="/Articles/Article21.html">Man With Key Fetish Takes Advantage of Drunk Friends</a>
-            <a href="/Articles/Article22.html">Frat Bro Drowns While Snorkeling</a>
-            <a href="/Articles/Article17.html">5 Things Only Haley Joel Osment Can See</a>
-            <a href="/Articles/Article12.html">New TV Show Just Snoop Dogg getting High and Doing The Dishes</a>
-            <a href="/Articles/Article33.html">Garbage Island in Pacific Ocean Now Twice The Size of Texas; Still Only Half As Disgusting</a>
-            <a href="/Articles/Article32.html">Awkward! These Teens All Decided to Bring Their AR-15s to School On The Same Day</a>
-            <a href="/Articles/Article10.html">Rich White Family on Third Attempt to Adopt Impoverished Black Superstar Athlete</a>
-            <a href="/Articles/Article7.html">Local teenager who just discovered masturbating trying to find best way to get parents to move him into the room with a lock.</a>
-            <a href="/Articles/Article23.html">People Don't Have the Heart To Tell This Holocaust Denier That 6 Million Jews Aren't Living At A Farm Up-State</a>
-            <a href="/Articles/Article24.html">How Did Jesus Turn Water Into Wine?</a>
-            <a href="/Articles/Article42.html">Legendary Pokemon Sexual Misconduct Starts Social Media Movement</a>
-            <a href="/Articles/Article39.html">Netflix Announces New Black Mirror Spin-Off</a>
-            <a href="/Articles/Article37.html">This Man says "We Get it Your Gay" To God Every Time He Sees a Rainbow</a>
-            <a href="/Articles/Article38.html">Local Couple Finally At Point Where They Can Fart Openly in Each Others Breakfast</a>
+            As Possible</a><br>
+            <a href="/Articles/Article21.html">Man With Key Fetish Takes Advantage of Drunk Friends</a><br>
+            <a href="/Articles/Article22.html">Frat Bro Drowns While Snorkeling</a><br>
+            <a href="/Articles/Article17.html">5 Things Only Haley Joel Osment Can See</a><br>
+            <a href="/Articles/Article12.html">New TV Show Just Snoop Dogg getting High and Doing The Dishes</a><br>
+            <a href="/Articles/Article33.html">Garbage Island in Pacific Ocean Now Twice The Size of Texas; Still Only Half As Disgusting</a><br>
+            <a href="/Articles/Article32.html">Awkward! These Teens All Decided to Bring Their AR-15s to School On The Same Day</a><br>
+            <a href="/Articles/Article10.html">Rich White Family on Third Attempt to Adopt Impoverished Black Superstar Athlete</a><br>
+            <a href="/Articles/Article7.html">Local teenager who just discovered masturbating trying to find best way to get parents to move him into the room with a lock.</a><br>
+            <a href="/Articles/Article23.html">People Don't Have the Heart To Tell This Holocaust Denier That 6 Million Jews Aren't Living At A Farm Up-State</a><br>
+            <a href="/Articles/Article24.html">How Did Jesus Turn Water Into Wine?</a><br>
+            <a href="/Articles/Article42.html">Legendary Pokemon Sexual Misconduct Starts Social Media Movement</a><br>
+            <a href="/Articles/Article39.html">Netflix Announces New Black Mirror Spin-Off</a><br>
+            <a href="/Articles/Article37.html">This Man says "We Get it, You're Gay" To God Every Time He Sees a Rainbow</a><br>
+            <a href="/Articles/Article38.html">Local Couple Finally At Point Where They Can Fart Openly in Each Others Breakfast</a><br>
 
         </div>
-        <div id="charity's">
+        <div id="charity">
             <h3 class="boom">Charity Of The Week</h3>
-            <a href="/Articles/Charity's/Charity.html">Swastikas for Potstickas</a>
-            <a href="/Articles/Charity's/Charity2.html">VR The Homeless</a>
-            <a href="/Articles/Charity's/Charity3.html">Get Cancer So You Can Use Make-A-Wish</a>
-            <a href="/Articles/Charity's/Charity4.html">Lower Goals, Raise Spirits</a>
+            <a href="/Articles/Charity's/Charity.html">Swastikas for Potstickas</a><br>
+            <a href="/Articles/Charity's/Charity2.html">VR The Homeless</a><br>
+            <a href="/Articles/Charity's/Charity3.html">Get Cancer So You Can Use Make-A-Wish</a><br>
+            <a href="/Articles/Charity's/Charity4.html">Lower Goals, Raise Spirits</a><br>
         </div>
         <div class="bing">
             <br>
@@ -111,19 +118,15 @@ October 1st 2018-->
                 <div>
                     <li><a id="home2" class="home" href="#home">Home</a></li>
                 </div>
-                <div>
-                    <li><a href="#news">News</a></li>
-                </div>
-                <div>
-                    <li><a href="contact.html">Contact</a></li>
-                </div>
-                <div>
-                    <li><a href="#about">About</a></li>
-                </div>
                 <span class="text3"><li><a  href="#title">eytan raphaely, programmer</a></li></span>
             </ul>
         </header>
+        <h1 id="Programmer">I Made This Site</h1>
     </div>
+    
+ 
+    
+    
 
 
 </body>

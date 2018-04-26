@@ -2,174 +2,67 @@
 Creative Project 2
 October 1st 2018 */
 
-#welcome {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: lighter;
-    letter-spacing: 4px;
-    opacity: 1;
-    transition: .5s ease;
-
+body {
+   background-color: #ff8967; 
 }
-
-
-
-
-
-
-a {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center; 
-}
-
-#contact-me-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: lighter;
-    letter-spacing: 4px;
-    padding-bottom: 20px;
-}
-
-
-
-.middle {
-    opacity: 0;
-    transition: .5s ease;
-    
-}
-
-#container:hover .middle {
-  opacity: 1;
-}
-
-
-
-#text1{
-    width:1px;
-    word-wrap: break-word;
-    position:absolute;
-    left: 8%;
-    top: 40%;
-    font-size: 24px;
-    letter-spacing: 4px;
-    
-
-    
-}
-
-#text2{
-    width:1px;
-    word-wrap: break-word;
-    position:absolute;
-    left: 52%;
-    top: 40%;
-    font-size: 24px;
-    letter-spacing: 4px;
-    
-}
-
-
-
-
-#container {
-    position: absolute;
-}
-
-
-
-#microphone:hover {
-    background-color: #ff8980;
-    border-radius: 30%;
-    
-}
-
-#laptop:hover{
-    background-color: #ff8980;
-    border-radius: 30%;
-}
-
-
-
-
 
 #microphone {
-    padding-top: 40px;
-    float: left;
-    width: 45%;
-    height: 400px;
-    background-color: #ff8967; 
+    position: relative;
+    text-align: center;
+    padding-top: 10px;
     
     
 }
 
-#laptop {
-    float:right;
+#microphone img{
     width: 50%;
-    height: 500px;
-    background-color: #ff8967;
+
     
     
 }
 
-html {
+.hidden {
+  display: none;
+}
+
+header  {
+    text-align: center;
     font-family: Helvetica;
     font-weight: lighter;
-    height: 100%;
+    letter-spacing: 4px;
+}
+header h1  {
+    font-weight: lighter;
+    letter-spacing: 10px;
+}
+
+#microphone img:hover {
+    background-color: #ff8980;
+    border-radius: 30%;
+    
+    
     
 }
 
-body {
-    background-color: #ff8967;
-    height: 100%;
+
+#microphone:hover .caption {
+    opacity: 1;
 }
 
-
-ul {
-    position: fixed;
-    top: 0;
+.caption {
+    position: absolute;
+    top: 45%;
+    right: 10%;;
     width: 100%;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-li {
-    float: left;
-    
+    opacity: 0;
+    transition: .5s ease;
+    font-size: 15px;
     
 }
 
-ul div{
-    transition: font-size .5s;
-    
-}
-
-ul div:hover{
-    font-size: 20px;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-    background-color: #111;
-}
-
-
-#tonvict {
-    width: 100%;
-    
+#comedy {
+    letter-spacing: 10px;
+    font-weight: lighter;
     
 }
 
@@ -180,24 +73,8 @@ li a:hover {
 
     /* Set a specific height */
     width: 100%;
-    min-height: 600px; 
+    min-height: 100vh;
     
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#parallax1 {
-    background-image: url("https://tonvict.github.io/images/comic.jpg");
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    
-    /* Set a specific height */
-    width: 50%;
-    min-height: 300px; 
     
 
     /* Create the parallax scrolling effect */
@@ -208,6 +85,30 @@ li a:hover {
 
 
 
+@media (min-width: 400px) {
+    .caption { font-size: 1.25rem; }
+    h1 {font-size: 1rem;}
+    #microphone img{ width: 60%;}
+}
+
+@media (min-width: 560px) {
+    .caption { font-size: 1.25rem; }
+    h1 {font-size: 1.25rem;}
+    #microphone img{ width: 60%;}
+}
+@media (min-width: 768px) {
+    .caption { font-size: 1.5rem; }
+    h1 {font-size: 1.5rem;}
+    #microphone img{ width: 50%;}
+}
+@media (min-width: 992px) {
+    .caption { font-size: 1.75rem; }
+    h1 {font-size: 1.75rem;}
+}
+@media (min-width: 1200px) {
+    .caption { font-size: 2rem; }
+    h1 {font-size: 2rem;}
+}
 #comic {
     width: 15%;
     display: block;
@@ -232,8 +133,9 @@ li a:hover {
 }
 
 #about p {
-    text-align: center;
+    text-align: left;
     padding: 2px;
+    
 }
 
 
@@ -241,6 +143,7 @@ li a:hover {
 .boom {
     text-align: center;
 }
+
 
 video {
     width: 20%;
@@ -251,7 +154,9 @@ video {
 }
 
 #about {
-    background-color: #ff8967;
+    background-color: #ff8980;
+    min-height: 100vh;
+    padding-top: 60px;
 }
 
 /* Style inputs with type="text", select elements and textareas */
@@ -282,8 +187,27 @@ input[type=submit]:hover {
 }
 
 /* Add a background color and some padding around the form */
-.container {
+#container {
     border-radius: 5px;
     background-color: #ff8990;
     padding: 20px;
+}
+
+#Programmer{
+    position: absolute;
+    left: 20px;
+    top:20%;
+}
+
+#articles {
+    text-align: center;
+    min-height: 100vh;
+    padding-top: 60px;
+}
+
+#charity {
+    padding-top: 60px;
+    text-align: center;
+    min-height: 100vh;
+    background-color: #ff89;
 }
