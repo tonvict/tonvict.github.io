@@ -211,3 +211,10 @@ input[type=submit]:hover {
     min-height: 100vh;
     background-color: #ff89;
 }
+
+#packets {
+    padding-top: 60px;
+    text-align: center;
+    min-height: 100vh;
+    background-color: #ff8987;
+}
